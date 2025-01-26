@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - St Boniface High School</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home_style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/1737820831023.jpg') }}" alt="St Boniface Logo">
+            <h1>St Boniface High School</h1>
+        </div>
+    </header>
+
+    <!--Navigation Links-->
+
+    <a href="#">Home</a>
+    <a href="/resources.html">Resources</a>
+    <a href="/about us.html">About Us</a>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to St Boniface High School</h2>
+            <p>At St Boniface, education is our light. Discover resources, activities, and more!</p>
+        </section>
+
+        <section class="gallery">
+            <h3>School Highlights</h3>
+            <img src="{{ url_for('static', filename='images/1724867422645.jpg') }}" alt="School Event">
+            <img src="{{ url_for('static', filename='images/1737742036722.jpg') }}" alt="School Event">
+        </section>
+
+        <section class="about">
+            <p style="font-size: 25px;">
+                Established in Maputsoe, St Boniface High School has a long history of academic excellence.
+                We pride ourselves on providing top-notch education in a nurturing environment.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 St Boniface High School - Thuto ke Leseli</p>
+    </footer>
+</body>
+</html>
